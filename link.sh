@@ -1,17 +1,22 @@
 #!/bin/bash
 
 files_and_paths=(
-  "./.claude/CLAUDE.md:~/.claude"
+  "./.claude/CLAUDE.md:~/.claude/CLAUDE.md"
+  "./.claude/settings.json:~/.claude/settings.json"
 )
 
 create_symlink() {
   local source_file=$(realpath $1)
   local destination_path=$2
+
+  destination_path="${destination_path/#\~/$HOME}"
+
   echo "Creating symlink from $source_file to $destination_path"
   
   backup_file="${destination_path}.bak"
 
   if [ -e "$destination_path" ]; then
+    echo "Backing up existing file to $backup_file"
     mv "$destination_path" "$backup_file"
   fi
 
