@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title SwitchAudioSource-Scarlett-2i2-USB
+# @raycast.title SwitchAudioSource-SOUNDPEATSPearlClipPro
 # @raycast.mode silent
 
 # Optional parameters:
