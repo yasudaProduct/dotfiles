@@ -11,7 +11,7 @@ windows:
       panes:
 <% if @args[0] -%>
 <% `git -C ~/Develop/#{@args[0]} worktree list --porcelain`.scan(/worktree (.+)/).flatten.each do |path| -%>
-        - cd <%= path %> && clear
+        - cd <%= path %> && git branch -v
 <% end -%>
 <% else -%>
         - echo "Usage: tmuxinator start worktree <project_name>"
