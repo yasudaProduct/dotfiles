@@ -1,0 +1,18 @@
+# ~/.config/tmuxinator/worktree.yml
+# Usage: tmuxinator start worktree <project_name>
+# Example: tmuxinator start worktree cinetag
+
+name: <%= @args[0] || 'worktree' %>
+root: ~/
+
+windows:
+  - editor:
+      layout: even-horizontal
+      panes:
+<% if @args[0] -%>
+<% `git -C ~/Develop/#{@args[0]} worktree list --porcelain`.scan(/worktree (.+)/).flatten.each do |path| -%>
+        - cd <%= path %> && clear
+<% end -%>
+<% else -%>
+        - echo "Usage: tmuxinator start worktree <project_name>"
+<% end -%>

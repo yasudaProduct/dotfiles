@@ -4,6 +4,7 @@ files_and_paths=(
   "./.claude/CLAUDE.md:~/.claude/CLAUDE.md"
   "./.claude/settings.json:~/.claude/settings.json"
   "./.raycast-scripts/:~/.raycast-scripts/"
+  "./.config:~/.config"
 )
 
 create_symlink() {
