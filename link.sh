@@ -5,6 +5,7 @@ files_and_paths=(
   "./.claude/settings.json:~/.claude/settings.json"
   "./.raycast-scripts/:~/.raycast-scripts/"
   "./.config:~/.config"
+  "./.tmux.conf:~/.tmux.conf"
 )
 
 create_symlink() {
