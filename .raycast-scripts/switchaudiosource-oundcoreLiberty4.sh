@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title SwitchAudioSource-soundcore-Liberty-4
+# @raycast.title SwitchAudioSource-soundcore-Liberty-5
 # @raycast.mode silent
 
 # Optional parameters:
@@ -12,4 +12,4 @@
 # @raycast.author hisasann
 # @raycast.authorURL https://raycast.com/hisasann
 
-SwitchAudioSource -f json -t output -s "soundcore Liberty 4"
+SwitchAudioSource -f json -t output -s "soundcore Liberty 5"
