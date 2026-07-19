@@ -13,6 +13,7 @@
     ],
     "deny": []
   },
+  "model": "sonnet",
   "hooks": {
     "Stop": [
       {
@@ -25,5 +26,11 @@
         ]
       }
     ]
-  }
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "figma@claude-plugins-official": true
+  },
+  "effortLevel": "xhigh",
+  "tui": "fullscreen"
 }
